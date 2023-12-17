@@ -1,10 +1,14 @@
 package com.example.bsms.models.entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.Set;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
+@Data
 @Table(name = "routes")
 public class Routes extends LocationCommons {
     @Column(name = "name")

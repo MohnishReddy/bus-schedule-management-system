@@ -3,8 +3,12 @@ package com.example.bsms.models.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Entity
+@Data
 @Table(name = "buses")
 public class Buses extends Common {
     @Column(name = "number_plate", nullable = false, unique = true)
