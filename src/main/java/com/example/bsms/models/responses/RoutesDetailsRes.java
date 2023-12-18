@@ -13,7 +13,7 @@ public class RoutesDetailsRes {
     @JsonProperty("routes_list")
     private List<SingleRouteDetails> routesList;
 
-    public void setBusStopList(List<RouteDetails> routeDetailsList) {
+    public void setRoutesList(List<RouteDetails> routeDetailsList) {
         List<SingleRouteDetails> singleRouteDetailsList = new ArrayList<>();
         for(RouteDetails routeDetails: routeDetailsList) {
             List<String> busStopNameList = new ArrayList<>();
